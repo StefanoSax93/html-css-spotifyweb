@@ -3,12 +3,13 @@
 }
 
 .left-bar {
+    min-height: calc(100vh - 50px);
     min-width: 225px;
     background-color: black; 
-    gap: 1rem;
+    gap: 0.8rem;
     padding-top: 1rem;
-    padding-bottom: 0.3rem;
     color: white;
+    font-size: 0.85rem;
 }
 
 .logo-big img {
@@ -20,9 +21,9 @@
     vertical-align: middle;
     margin-right: 0.5rem;
 }
-
 .left-bar-padding {
     padding-left: 1rem;
+    padding-right: 1rem;
 }
 /* Da usare dopo nell hover */
 /* .icons:hover {
@@ -30,8 +31,12 @@
     margin-left: -3px;
 } */
 .vertical-padding-bar {
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.vertical-padding-bar-lg {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
 }
 .grey-box {
     display: inline-block;
@@ -42,6 +47,30 @@
     line-height: 3rem;
     color: black;
     margin-right: 0.5rem;
+}
+.fa-plus {
+    transform: scale(2);
+}
+.download {
+    border-bottom: 1px solid #a3a3a3;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.download svg {
+    width: 1rem;
+}
+.user {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: #a3a3a3;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.user-name {
+    font-weight: 700;
+    margin-left: 0.5rem;
 }
 
 

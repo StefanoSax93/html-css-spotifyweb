@@ -1,0 +1,7 @@
+.app-container {
+    height: 100vh;
+}
+
+.left-bar {
+    min-width: 300px; 
+}

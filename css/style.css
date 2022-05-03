@@ -2,16 +2,20 @@
     height: 100vh;
 }
 
+html {
+    font-size: 14px;
+}
+
 .left-bar {
-    min-height: calc(100vh - 80px);
-    min-width: 225px;
+    min-height: calc(100vh - 5rem);
+    min-width: 15rem;
     background-color: black; 
     gap: 0.4rem;
     color: white;
     font-size: 0.85rem;
 }
 .logo-big {
-    min-height: 80px;
+    min-height: 4rem;
     display: flex;
     align-items: center;
 }
@@ -24,16 +28,13 @@
     max-width: 1.6rem;
     vertical-align: middle;
     margin-right: 0.5rem;
+    fill: #a3a3a3;
 }
 .left-bar-padding {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-/* Da usare dopo nell hover */
-/* .icons:hover {
-    border-left: 3px solid green;
-    margin-left: -3px;
-} */
+
 .vertical-padding-bar {
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
@@ -51,12 +52,11 @@
     line-height: 3rem;
     color: black;
     margin-right: 0.5rem;
-}
-.fa-plus {
-    transform: scale(2);
+    font-size: 3.5rem;
+    font-weight: 500;
 }
 .list {
-    max-height: 100px;
+    max-height: 8.5rem;
     overflow: auto;
 }
 .download {
@@ -82,7 +82,7 @@
 }
 .top-bar {
     background-color: rgba(0,0,0,0.9);
-    min-height: 80px;
+    min-height: 4rem;
     justify-content: flex-end;
     align-items: center;
     padding-right: 0.5rem;
@@ -95,11 +95,88 @@
     font-size: 0.7rem;
     font-weight: 600;
 }
+.main-part {
+    background-color: #141922;
+    min-height: calc(100vh - 9rem); 
+    overflow: auto;
+    padding: 0 0.8rem;
+}
+.nav-bar {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.nav-bar a {
+    padding: 1rem 0.4rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.title {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.marg-bottom-m {
+    margin-bottom: 1.3rem;
+}
+.marg-bottom-s {
+    margin-bottom: 0.4rem;
+}
+.song-img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+}
+.card {
+    gap: 0.7rem;
+}
+.song-title {
+    color: white;
+    font-size: 0.89rem;
+    padding-top:  0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 600;
+}
+.subtitle {
+    color: #a3a3a3;
+    font-size: 0.7rem;
+}
+.row-margin {
+    margin-bottom: 2rem;
+}
 
+.card-item {
+    flex-basis: calc(100% / 6 - 0.53rem);
+}
+.song-img-circle {
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 
 
 .media-player {
     background-color: #282828;
-    min-height: 80px;
+    min-height: 5rem;
 }
+/* Da usare dopo nell hover */
+/* .icons:hover {
+    border-left: 3px solid green;
+    margin-left: -3px;
+} */
+
+/* .icons:hover svg, .icons:hover a{
+    fill: white;
+    color: white;
+} */
+
+/* @media screen and (max-width: 700px) {
+    .item-700 {
+        flex-grow: 0;
+        flex-basis: calc(100% / 4 - 0.53rem);
+    }
+    .card {
+        flex-wrap: wrap;
+    }
+    
+} */

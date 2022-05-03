@@ -3,5 +3,50 @@
 }
 
 .left-bar {
-    min-width: 300px; 
+    min-width: 225px;
+    background-color: black; 
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0.3rem;
+    color: white;
+}
+
+.logo-big img {
+    max-width: 60%;
+}
+
+.left-bar .icons svg {
+    max-width: 1.6rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.left-bar-padding {
+    padding-left: 1rem;
+}
+/* Da usare dopo nell hover */
+/* .icons:hover {
+    border-left: 3px solid green;
+    margin-left: -3px;
+} */
+.vertical-padding-bar {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+.grey-box {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-color: #a3a3a3;
+    text-align: center;
+    line-height: 3rem;
+    color: black;
+    margin-right: 0.5rem;
+}
+
+
+
+
+.media-player {
+    background-color: #282828;
 }

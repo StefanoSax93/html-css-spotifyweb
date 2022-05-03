@@ -32,8 +32,13 @@
 .over-auto {
     overflow: auto;
 }
+
+a {
+    text-decoration: none;
+    color: #a3a3a3;
+}
 /* solo per debug */
 .borded {
     border: 2px solid red;
-    min-height: 100px;
+    min-height: 50px;
 }

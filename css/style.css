@@ -7,15 +7,15 @@ html {
 }
 
 :root {
-    --top-bar: 4rem;
-    --player-bar: 5.5rem;
+    --top-bar: 60px;
+    --player-bar: 80px;
     --color-primary: #a3a3a3;
     --color-secondary: #fff;
 }
 
 .left-bar {
     min-height: calc(100vh - var(--player-bar));
-    min-width: 15rem;
+    min-width: 200px;
     background-color: black; 
     gap: 0.4rem;
     color: var(--color-secondary);
@@ -143,11 +143,12 @@ html {
     position: relative;
 }
 .play-bigger {
-    border: 3px solid;
-    min-height: 35px;
+    border: 0.2rem solid;
+    min-height: 2.5rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    padding-left: 6px;
+    text-align: center;
+    padding-left: 0.2rem;
 }
 .absolute {
     color: var(--color-secondary);
@@ -204,13 +205,14 @@ html {
     max-width: 100%;
 }
 .title-box {
-    margin-right: 2.5rem;
+    margin-right: 1.5rem;
 }
 .not-padded {
     padding: 0;
 }
 .song-played svg {
-    min-width: 1rem;
+    width: 1rem;
+    max-width: 100%;
     fill: transparent;
     stroke: var(--color-primary);
     stroke-width: 3rem;
@@ -223,7 +225,8 @@ html {
     margin-right: -0.2rem;
 }
 .volume-bar {
-    min-width: 7rem;
+    width: 6rem;
+    max-width: 100%;
     min-height: 0.3rem;
     border-radius: 1rem;
     background-color: var(--color-primary);
@@ -239,13 +242,14 @@ html {
     justify-content: flex-end;
 }
 .media-player .player {
-    width: 40%;
+    width: 35%;
     max-width: 30rem;
     color: var(--color-secondary);
+    padding: 0 2.5rem;
 }
 .buttons {
     text-align: center;
-    padding: 0.8rem 0;
+    padding: 0.7rem 0;
     font-size: 1.3rem;
 }
 .button {
@@ -254,12 +258,12 @@ html {
     cursor: pointer;
 }
 .play-border {
-    display: inline-block;
-    border: 3px solid;
-    height: 27.5px;
+    border: 0.2rem solid;
+    min-height: 2rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    padding-left: 2px;
+    text-align: center;
+    padding-left: 0.1rem;
 }
 .play-bar {
     max-height: 0.3rem;
@@ -267,6 +271,7 @@ html {
     background-color: var(--color-primary);
     align-self: center;
     margin: 0 1rem;
+    max-width: 100%;
     cursor: pointer;
 }
 .pallino {
@@ -321,8 +326,8 @@ a:hover {
 .bar-effects:hover .pallino {
     display: block;
 }
-
-/* @media screen and (max-width: 700px) {
+/* effetto responsive */
+@media screen and (max-width: 700px) {
     .item-700 {
         flex-grow: 0;
         flex-basis: calc(100% / 4 - 0.53rem);
@@ -330,5 +335,7 @@ a:hover {
     .card {
         flex-wrap: wrap;
     }
-    
-} */
+    html {
+        font-size: 12.5px;
+    }
+} 

@@ -166,16 +166,19 @@ html {
     background-color: #282828;
     min-height: var(--player-bar);
     justify-content: space-between;
+    color: var(--color-primary);
+    font-size: 0.85rem;
 }
-.media-player .song-played {
+.media-player .song-played, .media-player .volume {
     padding: 0.5rem;
     display: flex;
     align-items: center;
+    gap: 0.7rem;
 }
 .song-cover {
     max-width: 3rem;
     aspect-ratio: 1/1;
-    margin-right: 1rem;
+    margin-right: 0.3rem;
 }
 .song-played img {
     max-width: 100%;
@@ -193,10 +196,29 @@ html {
     stroke-width: 3rem;
     margin-left: 0.5rem;
 }
+.fa-bars, .fa-display {
+    margin-right: 0.5rem;
+}
+.fa-ellipsis-vertical {
+    margin-right: -0.2rem;
+}
+.volume-bar {
+    min-width: 7rem;
+    min-height: 0.3rem;
+    border-radius: 1rem;
+    background-color: var(--color-primary);
+}
+.length-rate {
+    height: 0.3rem;
+    width: 30%;
+    background-color: var(--color-secondary);
+    border-radius: 1rem;
+}
 .media-player .player {
     width: 40%;
     max-width: 400px;
 }
+
 
 /* Da usare dopo nell hover */
 /* .icons:hover {

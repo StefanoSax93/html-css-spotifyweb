@@ -1,0 +1,44 @@
+.icons:hover {
+    border-left: 3px solid rgb(41, 207, 66);
+}
+
+.icons:hover svg, .icons:hover a {
+    color: var(--color-secondary);
+}
+
+.icons:hover .grey-box {
+    background-color: var(--color-secondary);
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+.play-border:hover {
+    transform: scale(1.2);
+}
+
+.relative:hover .absolute {
+    display: block;
+} 
+.relative:hover .song-img {
+    opacity: 0.5;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+.h-underline:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.song-played svg:hover {
+    cursor: pointer;
+    stroke: var(--color-secondary);
+}
+.bar-effects:hover .length-rate {
+    background-color: rgb(41, 207, 66);
+}
+.bar-effects:hover .pallino {
+    display: block;
+}

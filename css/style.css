@@ -26,11 +26,13 @@ html {
     display: flex;
     align-items: center;
 }
-
 .logo-big img {
     max-width: 60%;
 }
-
+.logo-small img {
+    max-width: 1.6rem;
+    display: none;
+}
 .left-bar .icons svg {
     max-width: 1.6rem;
     vertical-align: middle;
@@ -61,9 +63,10 @@ html {
     margin-right: 0.5rem;
     font-size: 3.5rem;
     font-weight: 500;
+    vertical-align: middle;
 }
 .list {
-    max-height: 8.5rem;
+    max-height: 13rem;
     overflow: auto;
 }
 .download svg {
@@ -159,20 +162,48 @@ html {
     border-radius: 50%;
     overflow: hidden;
 }
-
-
-
 .media-player {
     background-color: #282828;
     min-height: var(--player-bar);
+    justify-content: space-between;
 }
+.media-player .song-played {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.song-cover {
+    max-width: 3rem;
+    aspect-ratio: 1/1;
+    margin-right: 1rem;
+}
+.song-played img {
+    max-width: 100%;
+}
+.title-box {
+    margin-right: 2.5rem;
+}
+.not-padded {
+    padding: 0;
+}
+.song-played svg {
+    min-width: 1rem;
+    fill: transparent;
+    stroke: var(--color-primary);
+    stroke-width: 3rem;
+    margin-left: 0.5rem;
+}
+.media-player .player {
+    width: 40%;
+    max-width: 400px;
+}
+
 /* Da usare dopo nell hover */
 /* .icons:hover {
     border-left: 3px solid green;
 }
 
 .icons:hover svg, .icons:hover a {
-    fill: white;
     color: white;
 }
 

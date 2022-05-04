@@ -6,16 +6,23 @@ html {
     font-size: 14px;
 }
 
+:root {
+    --top-bar: 4rem;
+    --player-bar: 5rem;
+    --color-primary: #a3a3a3;
+    --color-secondary: #fff;
+}
+
 .left-bar {
-    min-height: calc(100vh - 5rem);
+    min-height: calc(100vh - var(--player-bar));
     min-width: 15rem;
     background-color: black; 
     gap: 0.4rem;
-    color: white;
+    color: var(--color-secondary);
     font-size: 0.85rem;
 }
 .logo-big {
-    min-height: 4rem;
+    min-height: var(--top-bar);
     display: flex;
     align-items: center;
 }
@@ -28,7 +35,7 @@ html {
     max-width: 1.6rem;
     vertical-align: middle;
     margin-right: 0.5rem;
-    fill: #a3a3a3;
+    fill: var(--color-primary);
 }
 .left-bar-padding {
     padding-left: 1rem;
@@ -64,7 +71,7 @@ html {
 }
 .grey-line {
     min-height: 1px;
-    background-color: #a3a3a3;
+    background-color: var(--color-primary);
     margin: 0.3rem 1rem;
 }
 .user {
@@ -72,7 +79,7 @@ html {
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
-    background-color: #a3a3a3;
+    background-color: var(--color-primary);
     vertical-align: middle;
     overflow: hidden;
 }
@@ -82,14 +89,14 @@ html {
 }
 .top-bar {
     background-color: rgba(0,0,0,0.9);
-    min-height: 4rem;
+    min-height: var(--top-bar);
     justify-content: flex-end;
     align-items: center;
     padding-right: 0.5rem;
 }
 .btn {
-    color: white;
-    border: 2px solid white;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
     border-radius: 2rem;
     padding: 0.5rem 2rem;
     font-size: 0.7rem;
@@ -97,7 +104,7 @@ html {
 }
 .main-part {
     background-color: #141922;
-    min-height: calc(100vh - 9rem); 
+    min-height: calc(100vh - (var(--player-bar) + var(--top-bar))); 
     overflow: auto;
     padding: 0 0.8rem;
 }
@@ -113,7 +120,7 @@ html {
     font-weight: 600;
 }
 .title {
-    color: white;
+    color: var(--color-secondary);
     font-size: 1.3rem;
     font-weight: 700;
 }
@@ -131,14 +138,14 @@ html {
     gap: 0.7rem;
 }
 .song-title {
-    color: white;
+    color: var(--color-secondary);
     font-size: 0.89rem;
     padding-top:  0.5rem;
     padding-bottom: 0.5rem;
     font-weight: 600;
 }
 .subtitle {
-    color: #a3a3a3;
+    color: var(--color-primary);
     font-size: 0.7rem;
 }
 .row-margin {
@@ -157,7 +164,7 @@ html {
 
 .media-player {
     background-color: #282828;
-    min-height: 5rem;
+    min-height: var(--player-bar);
 }
 /* Da usare dopo nell hover */
 /* .icons:hover {

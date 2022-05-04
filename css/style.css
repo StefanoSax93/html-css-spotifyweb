@@ -64,6 +64,7 @@ html {
     font-size: 3.5rem;
     font-weight: 500;
     vertical-align: middle;
+    cursor: pointer;
 }
 .list {
     max-height: 13rem;
@@ -95,7 +96,7 @@ html {
     min-height: var(--top-bar);
     justify-content: flex-end;
     align-items: center;
-    padding-right: 0.5rem;
+    padding-right: 1rem;
 }
 .btn {
     color: var(--color-secondary);
@@ -136,6 +137,25 @@ html {
 .song-img {
     max-width: 100%;
     aspect-ratio: 1/1;
+    cursor: pointer;
+}
+.relative {
+    position: relative;
+}
+.play-bigger {
+    border: 3px solid;
+    min-height: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    padding-left: 6px;
+}
+.absolute {
+    color: var(--color-secondary);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
 }
 .card {
     gap: 0.7rem;
@@ -207,12 +227,16 @@ html {
     min-height: 0.3rem;
     border-radius: 1rem;
     background-color: var(--color-primary);
+    cursor: pointer;
 }
 .length-rate {
     height: 0.3rem;
     width: 30%;
     background-color: var(--color-secondary);
     border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .media-player .player {
     width: 40%;
@@ -243,29 +267,60 @@ html {
     background-color: var(--color-primary);
     align-self: center;
     margin: 0 1rem;
+    cursor: pointer;
 }
-
-
-
-/* Da usare dopo nell hover */
-/* .icons:hover {
-    border-left: 3px solid green;
+.pallino {
+    display: none;
+    min-height: 0.8rem;
+    aspect-ratio: 1/1;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+}
+/* Effetti hover */
+.icons:hover {
+    border-left: 3px solid rgb(41, 207, 66);
 }
 
 .icons:hover svg, .icons:hover a {
-    color: white;
+    color: var(--color-secondary);
 }
 
 .icons:hover .grey-box {
-    background-color: white;
+    background-color: var(--color-secondary);
 }
-a:hover {
-    color: white;
-} */
-/* .play-border:hover {
-    transform: scale(1.3);
-} */
 
+a:hover {
+    color: var(--color-secondary);
+}
+
+.play-border:hover {
+    transform: scale(1.2);
+}
+
+.relative:hover .absolute {
+    display: block;
+} 
+.relative:hover .song-img {
+    opacity: 0.5;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+.h-underline:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.song-played svg:hover {
+    cursor: pointer;
+    stroke: var(--color-secondary);
+}
+.bar-effects:hover .length-rate {
+    background-color: rgb(41, 207, 66);
+}
+.bar-effects:hover .pallino {
+    display: block;
+}
 
 /* @media screen and (max-width: 700px) {
     .item-700 {

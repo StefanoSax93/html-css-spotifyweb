@@ -15,7 +15,7 @@ html {
 
 .left-bar {
     min-height: calc(100vh - var(--player-bar));
-    min-width: 200px;
+    width: 200px;
     background-color: black; 
     gap: 0.4rem;
     color: var(--color-secondary);
@@ -34,7 +34,7 @@ html {
     display: none;
 }
 .left-bar .icons svg {
-    max-width: 1.6rem;
+    height: 1.6rem;
     vertical-align: middle;
     margin-right: 0.5rem;
     fill: var(--color-primary);
@@ -228,6 +228,9 @@ html {
 .fa-ellipsis-vertical {
     margin-right: -0.2rem;
 }
+.volume i {
+    color: var(--color-secondary);
+}
 .volume-bar {
     width: 5rem; 
     min-height: 0.3rem;
@@ -346,6 +349,7 @@ a:hover {
     }
     .change-d {
         flex-direction: column;
+        gap: 5px;
     }
     .media-player .player {
         padding-left: 0.5rem;
@@ -353,5 +357,23 @@ a:hover {
     }
     .title-box {
         margin-right: 0.5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .ghost {
+        display: none;
+    }
+    .logo-small img {
+        display: block;
+    }
+    .left-bar {
+        width: 50px;
+        padding-top: 10px;
+    }
+    .user {
+        transform: translateX(-5px);
+    }
+    .fa-bars, .fa-display {
+        margin-right: 0.2rem;
     }
 }

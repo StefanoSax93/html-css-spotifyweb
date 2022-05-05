@@ -24,6 +24,7 @@ html {
     gap: 0.4rem;
     color: var(--color-secondary);
     font-size: 0.85rem;
+    transition: width 0.2s;
 }
 .logo-big {
     min-height: var(--top-bar);

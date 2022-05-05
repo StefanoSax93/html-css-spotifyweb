@@ -1,7 +1,10 @@
 @media screen and (max-width: 1100px) {
     .item-700 {
-        flex-grow: 0;
-        flex-basis: calc(100% / 4 - 0.53rem);
+        flex-basis: calc(100% / var(--n-card-1100)
+					- 
+					((var(--card-gap) / var(--n-card-1100))
+                    * 
+                    (var(--n-card-1100) - 1)));
     }
     .card {
         flex-wrap: wrap;
@@ -9,7 +12,11 @@
 } 
 @media screen and (max-width: 700px) {
     .item-600 {
-        flex-basis: calc(100% / 2 - 0.53rem);
+        flex-basis: calc(100% / var(--n-card-700)
+					- 
+					((var(--card-gap) / var(--n-card-700))
+                    * 
+                    (var(--n-card-700) - 1)));
     }
     .change-d {
         flex-direction: column;
@@ -39,5 +46,10 @@
     }
     .fa-bars, .fa-display {
         margin-right: 0.2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .item-400 {
+        flex-basis: 100%;
     }
 }

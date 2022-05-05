@@ -11,6 +11,9 @@ html {
     --player-bar: 80px;
     --color-primary: #a3a3a3;
     --color-secondary: #fff;
+    --card-gap: 0.7rem;
+    --n-card-1100: 4;
+    --n-card-700: 2;
 }
 
 .left-bar {
@@ -135,7 +138,7 @@ html {
     margin-bottom: 0.4rem;
 }
 .song-img {
-    max-width: 100%;
+    width: 100%;
     aspect-ratio: 1/1;
     cursor: pointer;
     display: block;
@@ -164,7 +167,10 @@ html {
     display: none;
 }
 .card {
-    gap: 0.7rem;
+    gap: var(--card-gap);
+}
+.card-item {
+    flex-basis: calc(100% / 6);
 }
 .song-title {
     color: var(--color-secondary);

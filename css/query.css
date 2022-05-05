@@ -49,9 +49,6 @@
     }
 }
 @media screen and (max-width: 500px) {
-    .item-400 {
-        flex-basis: 100%;
-    }
     .c-rotate {
         transform: rotate(-90deg);
         max-width: 50px;
@@ -86,4 +83,9 @@
         max-width: 30px;
         margin-right: -10px;
     }   
+}
+@media screen and (max-width: 375px) {
+    .item-400 {
+        flex-basis: 100%;
+    }
 }

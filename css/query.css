@@ -52,4 +52,36 @@
     .item-400 {
         flex-basis: 100%;
     }
+    .c-rotate {
+        transform: rotate(-90deg);
+        max-width: 50px;
+    }
+    .volume {
+        margin-left: 50px; 
+    }
+    .gg {
+        width: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .change-d {
+        display: none;
+    }
+    .button {
+        transform: scale(0.8);
+        margin-right: 0.5rem;
+    }
+    .play-bar {
+        min-width: 90px;
+    }
+    .m {
+        margin-right: -30px;
+    }
+    .media-player .title, .media-player .subtitle {
+        font-size: 60%;
+    }
+    .media-player img {
+        min-width: 40px;
+        margin-right: -10px;
+    }
 }

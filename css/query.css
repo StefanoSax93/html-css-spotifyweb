@@ -48,7 +48,7 @@
         margin-right: 0.2rem;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .item-400 {
         flex-basis: 100%;
     }
@@ -56,13 +56,9 @@
         transform: rotate(-90deg);
         max-width: 50px;
     }
-    .volume {
-        margin-left: 50px; 
-    }
     .gg {
         width: 40px;
-        display: flex;
-        justify-content: center;
+        display: block;
     }
     .change-d {
         display: none;
@@ -74,14 +70,20 @@
     .play-bar {
         min-width: 90px;
     }
+    .volume {
+        margin-left: 15px;
+    }
     .m {
-        margin-right: -30px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-right: -25px;
     }
     .media-player .title, .media-player .subtitle {
         font-size: 60%;
     }
     .media-player img {
-        min-width: 40px;
+        max-width: 30px;
         margin-right: -10px;
-    }
+    }   
 }

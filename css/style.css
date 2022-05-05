@@ -68,6 +68,7 @@ html {
     font-weight: 500;
     vertical-align: middle;
     cursor: pointer;
+    transition: background-color 0.5s;
 }
 .list {
     max-height: 13rem;

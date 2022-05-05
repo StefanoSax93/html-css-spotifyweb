@@ -1,3 +1,6 @@
+.icons {
+    transition: border-left 0.3s;
+}
 .icons:hover {
     border-left: 3px solid rgb(41, 207, 66);
 }
@@ -19,13 +22,16 @@ a:hover {
 }
 
 .relative:hover .absolute {
-    display: block;
+    opacity: 1;
 } 
 .relative:hover .song-img {
     opacity: 0.5;
 }
 .btn:hover {
     transform: scale(1.1);
+}
+.h-underline {
+    transition: color 0.4s,text-decoration 0.4s;
 }
 .h-underline:hover {
     color: var(--color-secondary);
@@ -40,5 +46,5 @@ a:hover {
     background-color: rgb(41, 207, 66);
 }
 .bar-effects:hover .pallino {
-    display: block;
+    opacity: 1;
 }

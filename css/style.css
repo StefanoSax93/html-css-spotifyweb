@@ -108,6 +108,7 @@ html {
     padding: 0.5rem 2rem;
     font-size: 0.7rem;
     font-weight: 600;
+    transition: transform 0.5s ease-out;
 }
 .main-part {
     background-color: #141922;
@@ -142,6 +143,7 @@ html {
     aspect-ratio: 1/1;
     cursor: pointer;
     display: block;
+    transition: opacity 0.5s;
 }
 .relative {
     position: relative;
@@ -164,7 +166,8 @@ html {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 .card {
     gap: var(--card-gap);
@@ -228,6 +231,7 @@ html {
     stroke: var(--color-primary);
     stroke-width: 3rem;
     margin-left: 0.5rem;
+    transition: stroke 0.3s;
 }
 .fa-bars, .fa-display {
     margin-right: 0.5rem;
@@ -253,6 +257,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    transition: background-color 0.3s;
 }
 .media-player .player {
     width: 40%;
@@ -277,6 +282,7 @@ html {
     aspect-ratio: 1/1;
     border-radius: 50%;
     padding-left: 0.15rem ;
+    transition: transform 0.4s;
 }
 .play-bar {
     max-height: 0.3rem;
@@ -288,9 +294,10 @@ html {
     cursor: pointer;
 }
 .pallino {
-    display: none;
+    opacity: 0;
     min-height: 0.8rem;
     aspect-ratio: 1/1;
     background-color: var(--color-secondary);
     border-radius: 50%;
+    transition: opacity 0.2s;
 }

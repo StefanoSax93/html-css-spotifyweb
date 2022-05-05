@@ -15,9 +15,10 @@ html {
     --n-card-1100: 4;
     --n-card-700: 2;
 }
-
+.h {
+    min-height: 100%;
+}
 .left-bar {
-    min-height: calc(100vh - var(--player-bar));
     width: 200px;
     background-color: black; 
     gap: 0.4rem;
@@ -33,7 +34,7 @@ html {
     max-width: 60%;
 }
 .logo-small img {
-    max-width: 1.6rem;
+    width: 1.7rem;
     display: none;
 }
 .left-bar .icons svg {

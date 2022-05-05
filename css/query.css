@@ -36,6 +36,7 @@
     }
     .logo-small img {
         display: block;
+        margin-bottom: 10px;
     }
     .left-bar {
         width: 50px;

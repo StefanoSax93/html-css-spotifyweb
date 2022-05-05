@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
     .item-700 {
         flex-grow: 0;
         flex-basis: calc(100% / 4 - 0.53rem);
@@ -7,7 +7,7 @@
         flex-wrap: wrap;
     }
 } 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .item-600 {
         flex-basis: calc(100% / 2 - 0.53rem);
     }
@@ -23,7 +23,7 @@
         margin-right: 0.5rem;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .ghost {
         display: none;
     }

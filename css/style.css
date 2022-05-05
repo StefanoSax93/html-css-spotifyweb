@@ -270,7 +270,7 @@ html {
     min-height: 1.8rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    padding-left: 0.1rem ;
+    padding-left: 0.15rem ;
 }
 .play-bar {
     max-height: 0.3rem;

@@ -72,10 +72,6 @@ html {
     cursor: pointer;
     transition: background-color 0.5s;
 }
-.list {
-    max-height: 13rem;
-    overflow: auto;
-}
 .download svg {
     width: 1.2rem;
 }
